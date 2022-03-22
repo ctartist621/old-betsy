@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "matangover.mypy",
+    "freakypie.code-python-isort",
+    "kevinglasson.cornflakes-linter",
+    "oouo-diogo-perdigao.docthis",
+    "ms-toolsai.jupyter",
+    "emeraldwalk.runonsave",
+    "redhat.vscode-yaml"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "python.venvPath": "/usr/local/anaconda3/envs",
+  "python.terminal.activateEnvironment": "old-betsy",
+  "python.linting.pylintEnabled": true,
+  "python.linting.enabled": true,
+  "python.defaultInterpreterPath": "/usr/local/anaconda3/envs/old-betsy/bin/python3",
+  "python.formatting.provider": "black",
+  "python.disableInstallationCheck": true,
+  "python.formatting.autopep8Path": "black",
+  "python.autoComplete.extraPaths": [
+    "./lib",
+    "./data"
+  ],
+}
