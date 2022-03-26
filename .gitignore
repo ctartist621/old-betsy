@@ -160,3 +160,4 @@ cython_debug/
 
 data/
 .DS_Store
+dask-worker-space

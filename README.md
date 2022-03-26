@@ -3,3 +3,8 @@ The goal of this project is to produce a trained ML model to predict the best ta
 
 ## Name Inspiration
 Named after [Hiram Percy Maxim](https://www.wikiwand.com/en/Hiram_Percy_Maxim)'s rotary [spark-gap transmitter](https://www.wikiwand.com/en/Spark-gap_transmitter).
+
+## Data
+Geomagnetic A and K indices back to 2010, from the SWPC FTP Warehouse.
+
+Contact info is from the reverse beacon network.

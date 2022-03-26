@@ -1,7 +1,10 @@
 name: old-betsy
 channels:
   - conda-forge
+  - pytorch
 dependencies:
+  - aiohttp
+  - aiofiles
   - dask
   - isort
   - requests
@@ -10,6 +13,7 @@ dependencies:
   - pytest-cov
   - pep8-naming
   - pip
+  - progress
   - python
   - pip >= 21.3.1
   - python >= 3.9
@@ -24,4 +28,5 @@ dependencies:
   - pylint >= 2.12.2
   - python-dateutil >= 2.8.2
   - pytorch
-
+  - torchtext
+  - untangle
