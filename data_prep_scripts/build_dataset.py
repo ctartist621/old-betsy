@@ -22,7 +22,6 @@ data_dir = "data/hamqth"
 # Get HamQTH Session ID
 document = untangle.parse(auth_uri)
 session_id = document.HamQTH.session.session_id.cdata
-csv_file = "/Users/dave/code/old-betsy/data/full.csv"
 
 
 def callsign_to_filename(callsign: str) -> str:
@@ -105,11 +104,14 @@ if __name__ == "__main__":
     cluster = LocalCluster(processes=True)
     client = Client(cluster)
     print(client)
+
+    csv_file = "/Users/dave/code/old-betsy/data/full_2022_01.csv"
+
     if os.path.exists(csv_file):
         os.remove(csv_file)
 
     spots_ddf = ddf.read_csv(
-        "data/reverse_beacon_network/20220101.csv",
+        "data/reverse_beacon_network/*.csv",
         dtype={"db": "float64", "freq": "float64", "speed": "float64"},
     )
 
@@ -118,7 +120,11 @@ if __name__ == "__main__":
         dtype={"geomagnetic_dipole_lat": "object", "geomagnetic_dipole_long": "object"},
     )
 
-    bar = Bar("Finished", max=len(spots_ddf))
+    bar = Bar(
+        "Finished",
+        max=len(spots_ddf),
+        suffix="%(index)d/%(max)d %(percent)d%% [%(elapsed)d / %(eta)d / %(eta_td)s] (%(iter_value)s)",
+    )
 
     completed = 0
 

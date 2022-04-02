@@ -8,6 +8,7 @@ dependencies:
   - dask
   - isort
   - requests
+  - matplotlib >= 3.5.1
   - pydocstyle
   - pytest
   - pytest-cov

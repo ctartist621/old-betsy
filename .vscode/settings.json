@@ -11,4 +11,7 @@
     "./lib",
     "./data"
   ],
+  "files.exclude": {
+    ".pytest_cache/**/*": true
+  },
 }
