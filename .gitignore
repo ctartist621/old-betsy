@@ -159,5 +159,6 @@ cython_debug/
 # End of https://www.toptal.com/developers/gitignore/api/python
 
 data/
+old-betsy-data/
 .DS_Store
 dask-worker-space
